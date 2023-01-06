@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #060930, #321f28, #060930);
+  color: #fff;
+  text-transform: capitalize;
+  padding-top: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+div li:first-child {
+  width: 165px;
+}
+
+form div {
+  margin: 30px 0px;
+}
+
+div li:last-child {
+  width: 420px;
+}
+
+#fname,
+#lname,
+#email,
+#phone,
+#password,
+#cpassword {
+  width: 400px;
+  transition: 0.3s width ease;
+  cursor: pointer;
+}
+#fname:hover,
+#lname:hover,
+#email:hover,
+#phone:hover,
+#password:hover,
+#cpassword:hover {
+  width: 420px;
+}
+
+#fname,
+#lname,
+#email,
+#phone,
+#password,
+#cpassword,
+#submit,
+#cancel {
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  padding: 10px 15px;
+  background-image: linear-gradient(to bottom right, #060930, #321f28, #060930);
+}
+
+.gender {
+  width: 220px;
+}
+
+input[type="radio"] {
+  margin: 0px 8px;
+}
+
+.dob {
+  width: 300px;
+}
+
+#month,
+#day,
+#year,
+#country,
+#hobby,
+#comment {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom right, #060930, #321f28, #060930);
+  color: #fff;
+  background-color: #321f28;
+  padding: 10px 5px;
+  text-transform: capitalize;
+}
+
+#comment {
+  color: #fff;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 32px;
+  font-size: 18px;
+  border: 2px solid #3498db;
+  color: #fff;
+  background-color: #321f28;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+button:hover {
+  letter-spacing: 2px;
+  box-shadow: 1px 1px 10px #3498db, -1px -1px 10px #3498db, 3px 3px 10px #64bcf7,
+    -3px -3px 10px #64bcf7;
+  text-shadow: 1px 1px 3px #fff;
+}
+
+input[type="checkbox"] {
+  margin-right: 7px;
+}
+
+.btns div {
+  display: inline-block;
+  width: 170px;
+}
+
+@media screen and (max-width: 700px) {
+  div li {
+    display: block;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  form div {
+    margin: 15px 0px;
+  }
+  #terms {
+    align-self: flex-start;
+    margin-left: 35px;
+  }
+  #copyrights {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #fname,
+  #lname,
+  #email,
+  #phone,
+  #password,
+  #cpassword {
+    width: 370px;
+  }
+  #fname:hover,
+  #lname:hover,
+  #email:hover,
+  #phone:hover,
+  #password:hover,
+  #cpassword:hover {
+    width: 390px;
+  }
+  #terms {
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container{
+    padding: 0 0 0 0;
+  }
+  #fname,
+  #lname,
+  #email,
+  #phone,
+  #password,
+  #cpassword {
+    width: 350px;
+  }
+  #fname:hover,
+  #lname:hover,
+  #email:hover,
+  #phone:hover,
+  #password:hover,
+  #cpassword:hover {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container{
+    padding: 0 0 0 40px;
+  }
+  #fname,
+  #lname,
+  #email,
+  #phone,
+  #password,
+  #cpassword {
+    width: 330px;
+  }
+  #fname:hover,
+  #lname:hover,
+  #email:hover,
+  #phone:hover,
+  #password:hover,
+  #cpassword:hover {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container{
+    padding: 0 0 0 100px;
+  }
+  #fname,
+  #lname,
+  #email,
+  #phone,
+  #password,
+  #cpassword {
+    width: 320px;
+  }
+  #fname:hover,
+  #lname:hover,
+  #email:hover,
+  #phone:hover,
+  #password:hover,
+  #cpassword:hover {
+    width: 340px;
+  }
+}
